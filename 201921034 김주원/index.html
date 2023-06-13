@@ -1,0 +1,28 @@
+html_content = """
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control Systems Analysis</title>
+</head>
+<body>
+    <h1>Control Systems Analysis</h1>
+
+    <h2>201921034 김주원</h2>
+
+    <h3>폐루프 전달함수</h3>
+    <p>M(s) = \\frac{100}{{s^2 + 5s + 106}}</p>
+
+    <h3>Unit Step 입력 응답곡선</h3>
+    <img src="plot1.png" alt="Unit Step 입력 응답곡선">
+
+    <h3>주파수 응답 및 보드선도</h3>
+    <img src="plot2.png" alt="주파수 응답 - 크기 (dB)">
+    <img src="plot3.png" alt="주파수 응답 - 위상 (도)">
+    <img src="plot4.png" alt="Bode Plot - Magnitude">
+
+</body>
+</html>
+"""
+
+with open('index.html', 'w') as file:
+    file.write(html_content)
